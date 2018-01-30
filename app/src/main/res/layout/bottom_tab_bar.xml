@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/title_bg_color"
+    android:orientation="vertical">
+
+
+
+    <com.mmbao.saas.custom.MyRadioGroup
+        android:id="@+id/rg_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="@+id/rbHome"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:paddingTop="6dp">
+
+        <FrameLayout
+            style="@style/FrameLayoutStyle" >
+            <RadioButton
+                android:id="@+id/rbHome"
+                style="@style/RaidoButtonStyle"
+                android:checked="true"
+                android:drawableTop="@drawable/btn_tabbar_home_selector"
+                android:text="@string/tab_home" />
+            <Button
+                android:visibility="gone"
+                style="@style/ButtonStyle" />
+        </FrameLayout>
+
+
+        <FrameLayout
+            style="@style/FrameLayoutStyle">
+            <RadioButton
+                android:id="@+id/rbBuy"
+                style="@style/RaidoButtonStyle"
+                android:drawableTop="@drawable/btn_tabbar_buy_selector"
+                android:text="@string/tab_buy" />
+            <Button
+                android:visibility="gone"
+                style="@style/ButtonStyle"/>
+        </FrameLayout>
+
+
+        <FrameLayout
+            style="@style/FrameLayoutStyle">
+            <RadioButton
+                android:id="@+id/rbCategory"
+                style="@style/RaidoButtonStyle"
+                android:drawableTop="@drawable/btn_tabbar_category_selector"
+                android:text="@string/tab_category" />
+            <Button
+                android:visibility="gone"
+                style="@style/ButtonStyle" />
+        </FrameLayout>
+
+
+        <FrameLayout
+            style="@style/FrameLayoutStyle">
+            <RadioButton
+                android:id="@+id/rbCart"
+                style="@style/RaidoButtonStyle"
+                android:drawableTop="@drawable/btn_tabbar_cart_selector"
+                android:text="@string/tab_cart" />
+            <Button
+                android:id="@+id/btn_msg"
+                style="@style/ButtonStyle"
+                />
+        </FrameLayout>
+
+
+        <FrameLayout
+            style="@style/FrameLayoutStyle">
+            <RadioButton
+                android:id="@+id/rbUserCenter"
+                style="@style/RaidoButtonStyle"
+                android:drawableTop="@drawable/btn_tabbar_user_center_selector"
+                android:text="@string/tab_user_center" />
+            <Button
+                android:visibility="gone"
+                style="@style/ButtonStyle"/>
+        </FrameLayout>
+    </com.mmbao.saas.custom.MyRadioGroup>
+
+</RelativeLayout>
